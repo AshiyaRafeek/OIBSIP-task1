@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+}
 header{
     width: 100%;
     height: 100vh;
@@ -12,21 +15,21 @@ header{
 }
 nav{
     width: 100%;
-    height: 100px;
+    height: 10rem;
     color:white;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .logo{
-    font-size: 2em;
-    letter-spacing: 2px;
+    font-size: 3.2rem;
+    letter-spacing: .2rem;
 }
 .menu a{
     text-decoration: none;
     color: white; 
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
     position: relative;
 }
 .menu a:before{
@@ -36,7 +39,7 @@ nav{
     left:0;
     width:0%;
     height:100%;
-    border-bottom:2px solid indianred;
+    border-bottom:.2rem solid indianred;
     transition: 0.4s linear;
 }
 .menu a:hover:before{
@@ -45,18 +48,18 @@ nav{
 .register a{
     text-decoration: none;
     color: white; 
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 1rem 2rem;
+    font-size: 2rem;
     background:indianred;
-    border-radius: 8px;
+    border-radius: .8rem;
     transition: 0.4s;
 }
 .register a:hover{
     background: transparent;
-    border:1px solid indianred;
+    border:.1rem solid indianred;
 }
 .h-txt{
-    max-width: 650px;
+    max-width: 65rem;
     position: absolute;
     top:50%;
     left:50%;
@@ -65,20 +68,48 @@ nav{
     color:white;
 }
 .h-txt span{
-    letter-spacing: 5px;
+    font-size: 1.6rem;
+    letter-spacing: .5rem;
 }
 .h-txt h1{
-    font-size: 3.5em;
+    font-size: 5.6rem;
 }
 .h-txt a{
+    font-size: 1.6em;
     text-decoration: none;
     background: indianred;
     color: white;
-    padding: 10px 20px;
-    letter-spacing: 5px;
+    padding: 1rem 2rem;
+    letter-spacing: .5rem;
     transition: 0.4s;
 }
 .h-txt a:hover{
     background: transparent;
-    border:1px solid indianred;
+    border:.1rem solid indianred;
+}
+/* code for responsiveness */
+@media (max-width:916px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:804px){
+    html{
+        font-size: 45%;
+    }
+}
+@media (max-width:659px){
+    html{
+        font-size: 35%;
+    }
+}
+@media (max-width:512px){
+    html{
+        font-size: 25%;
+    }
+}
+@media (max-width:367px){
+    html{
+        font-size: 15%;
+    }
 }
